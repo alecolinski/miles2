@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miles & Fly Agência de Viagens</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #12214a; color: #fff; }
+    header { background: linear-gradient(to right, #1a2c55, #23376d); padding: 80px 20px 60px; text-align: center; }
+    header img { max-width: 120px; margin-bottom: 10px; }
+    header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; margin: 10px 0 0; }
+    nav { background-color: #1b2d57; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 999; }
+    nav a { color: #58ccff; margin: 0 20px; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
+    nav a:hover { color: #ffffff; }
+    section { padding: 60px 20px; text-align: center; }
+    .services { background-color: #1e3366; }
+    .gallery { background-color: #142857; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 10px; }
+    .btn { display: inline-block; margin: 10px; padding: 14px 28px; background: #58ccff; color: #000; text-decoration: none; border-radius: 30px; font-weight: bold; }
+    .reviews { background-color: #1e2e57; padding: 60px 20px; }
+    footer { background: #111c3b; padding: 20px; text-align: center; font-size: 0.9rem; }
+  </style>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+</head>
+<body>
+  <header>
+    <img src="miles.jpg" alt="Logo Miles & Fly">
+    <h1>Miles & Fly Agência de Viagens</h1>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Com anos de experiência no mercado e parcerias sólidas com as maiores consolidadoras do Brasil, a Miles & Fly oferece um atendimento de excelência e soluções completas para tornar sua viagem inesquecível. Atuamos como uma agência de viagens tradicional, mas com um toque de inovação: oferecemos também gestão de milhas para clientes de alta renda, agregando valor e exclusividade aos nossos serviços.</p>
+  </section>
+
+  <section id="servicos" class="services">
+    <h2>Nossos Serviços</h2>
+    <p>Passagens aéreas · Hotéis · Cruzeiros · Pacotes personalizados · Seguro viagem · Aluguel de carros · Consultoria de roteiros.</p>
+  </section>
+
+  <section id="galeria" class="gallery">
+    <h2>Viagens dos Sonhos</h2>
+    <img src="https://source.unsplash.com/featured/?beach" alt="Praia">
+    <img src="https://source.unsplash.com/featured/?mountains" alt="Montanhas">
+    <img src="https://source.unsplash.com/featured/?europe" alt="Europa">
+    <img src="https://source.unsplash.com/featured/?city" alt="Cidade">
+  </section>
+
+  <section id="avaliacoes" class="reviews">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="elfsight-app-8b7b2011-9ca9-4166-9044-c6708686044c" data-elfsight-app-lazy></div>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <a class="btn" href="https://wa.me/5511989078289" target="_blank">WhatsApp</a>
+    <a class="btn" href="https://www.instagram.com/milesnfly" target="_blank">Instagram</a>
+    <a class="btn" href="https://agencia.iddas.com.br/so/jzsyecgo" target="_blank">Solicitar Orçamento</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Miles & Fly Agência de Viagens. Todos os direitos reservados.
+  </footer>
+</body>
+</html>

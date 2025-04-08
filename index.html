@@ -6,121 +6,22 @@
   <title>Miles & Fly Agência de Viagens</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    * {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #12214a;
-      color: #fff;
-    }
-    header {
-      background: linear-gradient(to right, #1a2c55, #23376d);
-      padding: 80px 20px 60px;
-      text-align: center;
-      position: relative;
-      animation: fadeIn 1.5s ease;
-    }
-    header img {
-      max-width: 120px;
-      margin-bottom: 10px;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      margin: 10px 0 0;
-      animation: slideDown 1s ease;
-    }
-    nav {
-      background-color: #1b2d57;
-      padding: 12px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    nav a {
-      color: #58ccff;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffffff;
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-      animation: fadeIn 1.5s ease;
-    }
-    #sobre p, .services p {
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.6;
-      font-size: 1.1rem;
-    }
-    .services {
-      background-color: #1e3366;
-    }
-    .gallery {
-      background-color: #142857;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-    .gallery img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 28px;
-      background: #58ccff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.3s ease;
-    }
-    .btn:hover {
-      background: #32b3e0;
-      transform: scale(1.05);
-    }
-    .reviews iframe {
-      width: 100%;
-      max-width: 600px;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-    footer {
-      background: #111c3b;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideDown {
-      from { transform: translateY(-20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #12214a; color: #fff; }
+    header { background: linear-gradient(to right, #1a2c55, #23376d); padding: 80px 20px 60px; text-align: center; }
+    header img { max-width: 120px; margin-bottom: 10px; }
+    header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; margin: 10px 0 0; }
+    nav { background-color: #1b2d57; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 999; }
+    nav a { color: #58ccff; margin: 0 20px; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
+    nav a:hover { color: #ffffff; }
+    section { padding: 60px 20px; text-align: center; }
+    .services { background-color: #1e3366; }
+    .gallery { background-color: #142857; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 10px; }
+    .btn { display: inline-block; margin: 10px; padding: 14px 28px; background: #58ccff; color: #000; text-decoration: none; border-radius: 30px; font-weight: bold; }
+    .reviews { background-color: #1e2e57; padding: 60px 20px; }
+    footer { background: #111c3b; padding: 20px; text-align: center; font-size: 0.9rem; }
   </style>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
 </head>
 <body>
   <header>
@@ -143,25 +44,20 @@
 
   <section id="servicos" class="services">
     <h2>Nossos Serviços</h2>
-    <p>Oferecemos tudo o que você precisa para uma viagem tranquila e completa:<br>
-    Passagens aéreas · Hotéis e hospedagens · Cruzeiros · Pacotes personalizados · Seguro viagem · Aluguel de carros · Consultoria de roteiros e muito mais.</p>
+    <p>Passagens aéreas · Hotéis · Cruzeiros · Pacotes personalizados · Seguro viagem · Aluguel de carros · Consultoria de roteiros.</p>
   </section>
 
   <section id="galeria" class="gallery">
     <h2>Viagens dos Sonhos</h2>
-    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Praia">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Montanhas">
-    <img src="https://images.unsplash.com/photo-1511732351157-dc5a1e8f9d8c" alt="Europa">
-    <img src="https://images.unsplash.com/photo-1494475673543-6a6a27143b90" alt="Cidade">
-    <img src="https://images.unsplash.com/photo-1540206395-68808572332f" alt="Ilha Exótica">
-    <img src="https://images.unsplash.com/photo-1582719478250-06ba1cfb90aa" alt="Resort">
-    <img src="https://images.unsplash.com/photo-1518481612913-499cfbfc6c3c" alt="Deserto">
-    <img src="https://images.unsplash.com/photo-1549880187-bf4c1f4a1cfb" alt="Hotel Luxuoso">
+    <img src="https://source.unsplash.com/featured/?beach" alt="Praia">
+    <img src="https://source.unsplash.com/featured/?mountains" alt="Montanhas">
+    <img src="https://source.unsplash.com/featured/?europe" alt="Europa">
+    <img src="https://source.unsplash.com/featured/?city" alt="Cidade">
   </section>
 
   <section id="avaliacoes" class="reviews">
     <h2>O que dizem nossos clientes</h2>
-    <iframe src="https://g.page/r/CVYHd_gV6OOREAE/review" loading="lazy"></iframe>
+    <div class="elfsight-app-8b7b2011-9ca9-4166-9044-c6708686044c" data-elfsight-app-lazy></div>
   </section>
 
   <section id="contato">
